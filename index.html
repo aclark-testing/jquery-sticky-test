@@ -65,48 +65,8 @@
 
     </style>
 
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script>
-
-     <!-- Via http://www.sustainablenorthwest.org/ -->
-
-    //------------------------------------------
-    // START show donate nav after scrolling
-    //------------------------------------------
-
-    var header_height = $('#header').height();
-
-
-    function scroll_check() {
-        //gets scroll position of the window
-        var scroll_pos = $(window).scrollTop();
-        var sticky_id = '#donate-sticky';
-        
-        //change this number to whatever pixels you want the class to be activated
-        var scroll_activate = header_height + 25;
-        
-        
-        if (scroll_pos >= scroll_activate ) {
-            //if the window is below the activate number
-            if ($(sticky_id).hasClass('active')) {
-                
-            
-            } else {
-                $(sticky_id).addClass('active');
-                $(sticky_id).fadeIn(100);
-            }
-            
-            
-        
-        } else {
-            //if the window is above the activate number
-            $(sticky_id).removeClass('active');
-            $(sticky_id).fadeOut(100);
-        }
-
-    }
-
-    </script>
+    <script src="http://sustainablenorthwest.org/scripts/jquery-1.8.2.min.js"></script>
+    <script src="http://sustainablenorthwest.org/scripts/scripts.js"></script>
 
   </head>
 
