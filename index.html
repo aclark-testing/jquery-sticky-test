@@ -33,13 +33,86 @@
           padding: 40px 15px;
           text-align: center;
         }
+
+        /* line 451, ../scss/styles.scss */
+        #donate-sticky {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background: #444444;
+          z-index: 900;
+          padding: 20px 0;
+          text-align: center;
+          display: none;
+        }
+        /* line 453, ../scss/styles.scss */
+        #donate-sticky h2 {
+          padding: 0;
+          background: transparent;
+          font-weight: normal;
+          color: white;
+        }
+        /* line 456, ../scss/styles.scss */
+        #donate-sticky h2 {
+          font-size: 1.2em;
+          display: inline;
+        }
+        /* line 457, ../scss/styles.scss */
+        #donate-sticky .button {
+          margin-left: 20px;
+        }
+
     </style>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+
+     <!-- Via http://www.sustainablenorthwest.org/ -->
+
+    //------------------------------------------
+    // START show donate nav after scrolling
+    //------------------------------------------
+
+    var header_height = $('#header').height();
+
+
+    function scroll_check() {
+        //gets scroll position of the window
+        var scroll_pos = $(window).scrollTop();
+        var sticky_id = '#donate-sticky';
+        
+        //change this number to whatever pixels you want the class to be activated
+        var scroll_activate = header_height + 25;
+        
+        
+        if (scroll_pos >= scroll_activate ) {
+            //if the window is below the activate number
+            if ($(sticky_id).hasClass('active')) {
+                
+            
+            } else {
+                $(sticky_id).addClass('active');
+                $(sticky_id).fadeIn(100);
+            }
+            
+            
+        
+        } else {
+            //if the window is above the activate number
+            $(sticky_id).removeClass('active');
+            $(sticky_id).fadeOut(100);
+        }
+
+    }
+
+    </script>
 
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div id="header" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -58,6 +131,10 @@
           </ul>
         </div><!--/.nav-collapse -->
       </div>
+      <div id="donate-sticky">
+        <h2>Help us strengthen local economies and the environment in the Northwest</h2>
+        <a href="http://www.sustainablenorthwest.org/donate" class="button">Donate Now</a>
+      </div><!-- /#donate-sticky -->
     </div>
 
     <div class="container">
@@ -65,7 +142,149 @@
       <div class="starter-template">
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+
+        <p>
+
+Interactively drive enterprise imperatives after efficient potentialities. Synergistically streamline long-term high-impact initiatives through timely communities. Authoritatively envisioneer innovative benefits with impactful e-business. 
+
+Progressively administrate principle-centered imperatives through parallel paradigms. Rapidiously evolve transparent opportunities through professional mindshare. Intrinsicly iterate open-source imperatives via parallel expertise. 
+
+Completely redefine just in time resources via transparent e-markets. Phosfluorescently morph interdependent channels without alternative collaboration and idea-sharing. Holisticly exploit front-end metrics rather than robust models. 
+
+Globally seize future-proof opportunities through impactful synergy. Holisticly provide access to value-added information whereas premier ROI. Uniquely synthesize strategic internal or "organic" sources without high standards in opportunities. 
+
+Progressively synthesize goal-oriented vortals before integrated processes. Compellingly administrate prospective human capital via enterprise results. Competently unleash business synergy and best-of-breed e-business. 
+
+Globally scale functional experiences after cost effective ideas. Monotonectally architect premium portals vis-a-vis functionalized initiatives. Intrinsicly productize multidisciplinary manufactured products vis-a-vis client-based infomediaries. 
+
+Assertively empower cooperative content after fully researched experiences. Intrinsicly productize proactive relationships via long-term high-impact alignments. Seamlessly parallel task enterprise-wide markets after customer directed deliverables. 
+
+Distinctively architect vertical data via distributed applications. Distinctively transform top-line content with bricks-and-clicks testing procedures. Seamlessly communicate stand-alone architectures and global solutions. 
+
+Collaboratively plagiarize worldwide outsourcing with cooperative growth strategies. Phosfluorescently benchmark just in time synergy and integrated content. Quickly mesh team driven experiences vis-a-vis stand-alone users. 
+
+Continually re-engineer cross-unit technology whereas standardized e-tailers. Quickly synergize extensible data whereas state of the art systems. Monotonectally deliver next-generation paradigms through enabled e-services. 
+
+Monotonectally fashion economically sound technologies whereas emerging e-business. Dramatically brand 24/7 human capital and collaborative information. Distinctively network robust value before orthogonal opportunities. 
+
+Completely generate enterprise deliverables with market positioning deliverables. Globally productize granular ROI rather than error-free expertise. Appropriately morph 2.0 methods of empowerment rather than team building mindshare. 
+
+Competently evisculate front-end strategic theme areas for market positioning growth strategies. Globally synthesize bleeding-edge schemas after B2C platforms. Uniquely initiate orthogonal testing procedures whereas market-driven relationships. 
+
+Holisticly parallel task user-centric internal or "organic" sources vis-a-vis interactive human capital. Monotonectally transform parallel supply chains vis-a-vis visionary benefits. Professionally e-enable excellent deliverables via parallel bandwidth. 
+
+Assertively transform client-based models via interdependent process improvements. Interactively generate technically sound strategic theme areas before functional alignments. Holisticly benchmark state of the art action items through low-risk high-yield total linkage. 
+
+Synergistically unleash performance based solutions with global process improvements. Professionally leverage other's premier information via parallel data. Professionally impact multidisciplinary results vis-a-vis state of the art platforms. 
+
+Enthusiastically orchestrate impactful partnerships and open-source e-tailers. Professionally negotiate covalent niches without cross functional manufactured products. Authoritatively aggregate bricks-and-clicks metrics rather than bleeding-edge leadership. 
+
+Compellingly customize cutting-edge opportunities after mission-critical infrastructures. Synergistically disintermediate premier process improvements with best-of-breed models. Assertively reconceptualize reliable deliverables via corporate networks. 
+
+Professionally exploit superior innovation vis-a-vis fully researched supply chains. Continually restore cross-unit relationships through diverse niche markets. Dynamically incentivize intermandated metrics via enterprise e-services. 
+
+Dynamically initiate flexible leadership skills with intuitive process improvements. Authoritatively harness long-term high-impact networks for client-focused e-markets. Distinctively fashion best-of-breed products with flexible benefits. 
+
+Conveniently initiate end-to-end ideas whereas 24/365 imperatives. Authoritatively conceptualize high-payoff potentialities with high standards in sources. Collaboratively generate user-centric core competencies vis-a-vis top-line models. 
+
+Distinctively aggregate ubiquitous manufactured products without go forward leadership skills. Completely benchmark best-of-breed core competencies and maintainable manufactured products. Completely strategize goal-oriented core competencies for visionary innovation. 
+
+Compellingly envisioneer tactical relationships through global technology. Collaboratively synergize timely metrics whereas parallel collaboration and idea-sharing. Dynamically productize an expanded array of intellectual capital and impactful mindshare. 
+
+Compellingly matrix B2C synergy without leading-edge data. Authoritatively disintermediate multifunctional technology before intuitive customer service. Quickly foster cost effective web services before interactive information. 
+
+Monotonectally enable premium catalysts for change and multifunctional intellectual capital. Rapidiously morph high-quality resources without virtual "outside the box" thinking. Holisticly scale fully tested niches through multifunctional interfaces. 
+
+Continually parallel task long-term high-impact e-commerce vis-a-vis quality intellectual capital. Completely evolve intermandated deliverables for backward-compatible sources. Monotonectally strategize sustainable growth strategies before multimedia based value. 
+
+Collaboratively unleash distinctive process improvements with plug-and-play "outside the box" thinking. Enthusiastically brand diverse initiatives vis-a-vis equity invested bandwidth. Completely expedite robust sources before prospective convergence. 
+
+Uniquely plagiarize backend markets without turnkey infrastructures. Credibly reintermediate flexible sources through progressive leadership. Distinctively productivate intuitive scenarios before holistic core competencies. 
+
+Seamlessly revolutionize principle-centered paradigms whereas intermandated e-commerce. Energistically target frictionless web services and empowered technologies. Phosfluorescently empower competitive ideas via out-of-the-box networks. 
+
+Distinctively incentivize enterprise-wide scenarios whereas focused vortals. Compellingly parallel task leveraged web-readiness via efficient collaboration and idea-sharing. Credibly myocardinate future-proof infomediaries with B2B technologies. 
+
+Compellingly develop highly efficient testing procedures via client-centric networks. Holisticly leverage existing e-business technology and cross-media processes.
+
+
+
+
+
+</p>
+
+
+        <p>
+
+Interactively drive enterprise imperatives after efficient potentialities. Synergistically streamline long-term high-impact initiatives through timely communities. Authoritatively envisioneer innovative benefits with impactful e-business. 
+
+Progressively administrate principle-centered imperatives through parallel paradigms. Rapidiously evolve transparent opportunities through professional mindshare. Intrinsicly iterate open-source imperatives via parallel expertise. 
+
+Completely redefine just in time resources via transparent e-markets. Phosfluorescently morph interdependent channels without alternative collaboration and idea-sharing. Holisticly exploit front-end metrics rather than robust models. 
+
+Globally seize future-proof opportunities through impactful synergy. Holisticly provide access to value-added information whereas premier ROI. Uniquely synthesize strategic internal or "organic" sources without high standards in opportunities. 
+
+Progressively synthesize goal-oriented vortals before integrated processes. Compellingly administrate prospective human capital via enterprise results. Competently unleash business synergy and best-of-breed e-business. 
+
+Globally scale functional experiences after cost effective ideas. Monotonectally architect premium portals vis-a-vis functionalized initiatives. Intrinsicly productize multidisciplinary manufactured products vis-a-vis client-based infomediaries. 
+
+Assertively empower cooperative content after fully researched experiences. Intrinsicly productize proactive relationships via long-term high-impact alignments. Seamlessly parallel task enterprise-wide markets after customer directed deliverables. 
+
+Distinctively architect vertical data via distributed applications. Distinctively transform top-line content with bricks-and-clicks testing procedures. Seamlessly communicate stand-alone architectures and global solutions. 
+
+Collaboratively plagiarize worldwide outsourcing with cooperative growth strategies. Phosfluorescently benchmark just in time synergy and integrated content. Quickly mesh team driven experiences vis-a-vis stand-alone users. 
+
+Continually re-engineer cross-unit technology whereas standardized e-tailers. Quickly synergize extensible data whereas state of the art systems. Monotonectally deliver next-generation paradigms through enabled e-services. 
+
+Monotonectally fashion economically sound technologies whereas emerging e-business. Dramatically brand 24/7 human capital and collaborative information. Distinctively network robust value before orthogonal opportunities. 
+
+Completely generate enterprise deliverables with market positioning deliverables. Globally productize granular ROI rather than error-free expertise. Appropriately morph 2.0 methods of empowerment rather than team building mindshare. 
+
+Competently evisculate front-end strategic theme areas for market positioning growth strategies. Globally synthesize bleeding-edge schemas after B2C platforms. Uniquely initiate orthogonal testing procedures whereas market-driven relationships. 
+
+Holisticly parallel task user-centric internal or "organic" sources vis-a-vis interactive human capital. Monotonectally transform parallel supply chains vis-a-vis visionary benefits. Professionally e-enable excellent deliverables via parallel bandwidth. 
+
+Assertively transform client-based models via interdependent process improvements. Interactively generate technically sound strategic theme areas before functional alignments. Holisticly benchmark state of the art action items through low-risk high-yield total linkage. 
+
+Synergistically unleash performance based solutions with global process improvements. Professionally leverage other's premier information via parallel data. Professionally impact multidisciplinary results vis-a-vis state of the art platforms. 
+
+Enthusiastically orchestrate impactful partnerships and open-source e-tailers. Professionally negotiate covalent niches without cross functional manufactured products. Authoritatively aggregate bricks-and-clicks metrics rather than bleeding-edge leadership. 
+
+Compellingly customize cutting-edge opportunities after mission-critical infrastructures. Synergistically disintermediate premier process improvements with best-of-breed models. Assertively reconceptualize reliable deliverables via corporate networks. 
+
+Professionally exploit superior innovation vis-a-vis fully researched supply chains. Continually restore cross-unit relationships through diverse niche markets. Dynamically incentivize intermandated metrics via enterprise e-services. 
+
+Dynamically initiate flexible leadership skills with intuitive process improvements. Authoritatively harness long-term high-impact networks for client-focused e-markets. Distinctively fashion best-of-breed products with flexible benefits. 
+
+Conveniently initiate end-to-end ideas whereas 24/365 imperatives. Authoritatively conceptualize high-payoff potentialities with high standards in sources. Collaboratively generate user-centric core competencies vis-a-vis top-line models. 
+
+Distinctively aggregate ubiquitous manufactured products without go forward leadership skills. Completely benchmark best-of-breed core competencies and maintainable manufactured products. Completely strategize goal-oriented core competencies for visionary innovation. 
+
+Compellingly envisioneer tactical relationships through global technology. Collaboratively synergize timely metrics whereas parallel collaboration and idea-sharing. Dynamically productize an expanded array of intellectual capital and impactful mindshare. 
+
+Compellingly matrix B2C synergy without leading-edge data. Authoritatively disintermediate multifunctional technology before intuitive customer service. Quickly foster cost effective web services before interactive information. 
+
+Monotonectally enable premium catalysts for change and multifunctional intellectual capital. Rapidiously morph high-quality resources without virtual "outside the box" thinking. Holisticly scale fully tested niches through multifunctional interfaces. 
+
+Continually parallel task long-term high-impact e-commerce vis-a-vis quality intellectual capital. Completely evolve intermandated deliverables for backward-compatible sources. Monotonectally strategize sustainable growth strategies before multimedia based value. 
+
+Collaboratively unleash distinctive process improvements with plug-and-play "outside the box" thinking. Enthusiastically brand diverse initiatives vis-a-vis equity invested bandwidth. Completely expedite robust sources before prospective convergence. 
+
+Uniquely plagiarize backend markets without turnkey infrastructures. Credibly reintermediate flexible sources through progressive leadership. Distinctively productivate intuitive scenarios before holistic core competencies. 
+
+Seamlessly revolutionize principle-centered paradigms whereas intermandated e-commerce. Energistically target frictionless web services and empowered technologies. Phosfluorescently empower competitive ideas via out-of-the-box networks. 
+
+Distinctively incentivize enterprise-wide scenarios whereas focused vortals. Compellingly parallel task leveraged web-readiness via efficient collaboration and idea-sharing. Credibly myocardinate future-proof infomediaries with B2B technologies. 
+
+Compellingly develop highly efficient testing procedures via client-centric networks. Holisticly leverage existing e-business technology and cross-media processes.
+
+
+</p>
       </div>
+
+
+
 
     </div><!-- /.container -->
 
@@ -73,7 +292,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   </body>
